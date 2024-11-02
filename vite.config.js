@@ -5,8 +5,10 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  outputDir: 'docs',
-  publicPath: '/taluo',
+  build: {
+    outDir: 'docs',
+    assetsDir: 'taluo',
+  },
   plugins: [
     vue(),
   ],
